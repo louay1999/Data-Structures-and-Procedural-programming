@@ -1,0 +1,20 @@
+ALGORITHM findDistinctsum
+VAR
+    input set1, set2;
+    sum =0;
+BEGIN
+    set1:={3, 1, 7, 9}
+    set2:={2, 4, 1, 9, 3}
+    FOR each element in set1 DO
+     IF (element not in set1) THEN
+        sum += element
+     END_IF   
+  
+    END_FOR
+    FOR each element in set2 DO
+    IF (element not in set2) THEN
+       sum += element
+    END_IF
+    END_FOR
+    return sum
+END
